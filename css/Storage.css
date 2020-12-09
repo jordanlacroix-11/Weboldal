@@ -7,13 +7,14 @@
   background-size: cover;
 }
 .nav-link{
-	font-family: sans-serif;
-	text-transform: uppercase;
-	margin-right: 55px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-right: 55px;
+  font-size: clamp(1rem, 1.15vw, 5rem);
 }
-
+  
 .navbar-brand {
-  font-size: xx-large;
+  font-size: clamp(1rem, 2.4vw, 5rem);
 }
 
 .py-5 {

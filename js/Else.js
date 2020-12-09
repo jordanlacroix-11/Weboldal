@@ -9,7 +9,7 @@ function fv1() {
 function displayDate() {
     console.log("Hello");
     alert("Hello...\n\nMost a böngésző értelmezi a JavaScript kódot.");
-    var d = new Date(); z
+    var d = new Date();
     document.getElementById("demo").innerHTML = d.toLocaleDateString();
     document.getElementById("demo2").innerHTML = d.toLocaleTimeString();
 

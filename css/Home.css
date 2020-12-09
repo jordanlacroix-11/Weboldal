@@ -19,17 +19,19 @@ body {
     transform: translateX(-50%) translateY(-50%);
 }
 .box h2 {
-    padding: 20px;
-    font-size: 48px;
+    padding: 2%;
+    font-size: clamp(1rem, 2.5vw, 5rem);
     text-transform: uppercase;
     color: #40a7db;
     text-align: center;
+
+
 }
 
 .box p {
     margin: 0;
     padding: 0px 30px 30px 30px;
-    font-size: 20px;
+    font-size: clamp(0.75rem, 1.5vw, 5rem);
     color: white;
     text-align: center;
 }
@@ -38,17 +40,17 @@ body {
 	position: absolute;
 	right: 10px;
     bottom: 10px;
-    font-size: 25px;
 }
     
 .nav-link{
     font-family: sans-serif;
     text-transform: uppercase;
     margin-right: 55px;
+    font-size: clamp(1rem, 1.15vw, 5rem);
 }
     
 .navbar-brand {
-    font-size: xx-large;
+    font-size: clamp(1rem, 2.4vw, 5rem);
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -70,7 +72,8 @@ body {
         display: none;
     }
     body {
-        background: url(/media/pexels-crypto-crow-1447418.jpg);
+        background: url(/media/pexels-kehn-hermano-3881034.jpg);
+        background-size: cover;
     }
 }
 
@@ -78,6 +81,8 @@ body {
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
     border-radius: 25px;
+    width: fit-content;
+    height: fit-content;
 }
 
 .editor p {
@@ -85,4 +90,5 @@ body {
     padding: 0px 10px 0px 10px;
     border: 0px;
     margin: 0px;
+    font-size: clamp(0.6rem, 1vw, 5rem);
 }
