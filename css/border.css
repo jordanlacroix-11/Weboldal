@@ -77,12 +77,12 @@ body{
 .box:nth-child(2)::before,
 .box:nth-child(2)::after
 {
-    background: linear-gradient(235deg,#ff005e #010615,#fbff00);
+    background: linear-gradient(235deg,#bd9ca8, #010615,#fbff00);
 }
 .box:nth-child(3):before,
 .box:nth-child(3):after
 {
-    background: linear-gradient(235deg,#772aff #010615,#2196f3);
+    background: linear-gradient(235deg,#8d2aff, #010615,#21f32c);
 }
 .box .content{
     position: absolute;
