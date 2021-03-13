@@ -1,6 +1,6 @@
 body {
     background: url(/media/shutterstock_326638589.jpg);
-    background-size: 1920px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -57,22 +57,42 @@ body {
     text-justify: inter-word;
 }
 
-.boxborder-video {
-    position: relative;
+#customers {
+    font-family: sans-serif;
+    border-collapse: collapse;
+    font-size: 0.9em;
     width: 100%;
-    padding-bottom: 56.25%; 
-    height: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+  }
+  
+  #customers td, #customers th {
+    border: 3px solid rgb(184, 170, 170);
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  #customers tr:nth-child(odd){background-color: #d3d8d8;}
+  
+  #customers tr:hover {background-color: rgb(189, 181, 108);}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(189, 181, 108);
+    color: rgb(0, 0, 0);
   }
 
-.boxborder-video iframe{
-position: absolute;
-top:0;
-left: 50%;
-transform: translateX(-50%);
-width: 60%;
-height: 60%;
-border-radius: 25px;
-margin-bottom: 20px;
+.embed-responsive{
+    width: 51%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(78, 133, 216, 0.5);
+    margin-top: 5rem;
+
 }
     
 .nav-link{
@@ -109,41 +129,27 @@ margin-bottom: 20px;
     font-size: clamp(1rem, 1.5vw, 5rem);
 }
 
-#customers {
-    font-family: sans-serif;
-    border-collapse: collapse;
-    font-size: 0.9em;
-    min-width: 400px;
-    width: 100%;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgb(0, 0, 0);
-  }
-  
-  #customers td, #customers th {
-    border: 3px solid rgb(184, 170, 170);
-    padding: 8px;
-  }
-  
-  #customers tr:nth-child(even){background-color: #f2f2f2;}
-  #customers tr:nth-child(odd){background-color: #d3d8d8;}
-  
-  #customers tr:hover {background-color: rgb(189, 181, 108);}
-  
-  #customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: rgb(189, 181, 108);
-    color: rgb(0, 0, 0);
-  }
+
+
+#logo{
+    color: black;
+    transition: 0.3s;
+}
+#logo:hover{
+    color: rgb(156, 156, 156);
+    transition: 0.3s;
+}
 
 #navbarDropdown{
     color: black;
     transition: 0.3s;
 }
 #navbarDropdown:hover{
-    color: grey;
+    color: rgb(156, 156, 156);
+}
+.nav-link{
+    padding: 0px;
+
 }
 
 
@@ -165,6 +171,7 @@ margin-bottom: 20px;
     font-size: clamp(1rem, 1.2vw, 5rem);
     transition: 0.5s;
     background-color: rgba(128, 128, 128, 0);
+    text-align: center;
 }
 .dropdown-item:hover{
     color: black;
