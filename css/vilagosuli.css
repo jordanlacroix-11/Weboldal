@@ -41,8 +41,7 @@ body {
 .boxborder h2 {
     margin: 0;
     padding: 0;
-    font-size: clamp(1rem, 3vw, 5rem);
-    text-transform: uppercase;
+    font-size: 3vw;
     color: rgb(189, 181, 108);
     text-align: center;
 }
@@ -50,7 +49,7 @@ body {
 .boxborder h3 {
     margin: 0;
     padding: 0;
-    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-size: 2vw;
     line-height: 175%;
     color: #ffffff;
     text-align: left;
@@ -70,6 +69,7 @@ body {
   #customers td, #customers th {
     border: 3px solid rgb(184, 170, 170);
     padding: 8px;
+    font-size: 2vw;
   }
   
   #customers tr:nth-child(even){background-color: #f2f2f2;}
