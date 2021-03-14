@@ -5,12 +5,79 @@ body {
     background-attachment: fixed;
 }
 
-.navbar-brand {color: rgb(189, 181, 108); font-size: xx-large;}
-
-.navbar {
-    color: blue;
+#navbarDropdown{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-right: 55px;
+    color:rgb(255, 255, 255);
+    transition: 0.3s;
 }
 
+.nav-item{
+    list-style: none;
+}
+
+.dropdown-toggle::after {
+    display:none;
+}
+
+#navbarDropdown:hover{
+    color:rgb(131, 131, 131);
+}
+    
+#logoKep{
+    width: 10%;
+}
+
+#logo{
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    font-size: 50px;
+}
+#logo:hover{
+    color: rgb(156, 156, 156);
+    transition: 0.3s;
+}
+
+    
+}
+.nav-link{
+    padding: 0px;
+
+}
+
+.dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.76); 
+    border-radius: 25px;
+    transition: 0.4s;
+}
+
+.dropdown-item{
+    color: white;
+    font-size: clamp(1rem, 1.2vw, 5rem);
+    transition: 0.5s;
+    background-color: rgba(128, 128, 128, 0);
+    text-align: center;
+}
+.dropdown-item:hover{
+    color: black;
+    font-size: clamp(1rem, 1.2vw, 5rem);
+    transition: 0.4s;
+    background-color: rgba(189, 181, 108);
+    border-radius: 25px;
+}
+
+
+  
+
+.embed-responsive{
+    width: 51%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    margin-top: 5rem;
+
+}
 
 .boxborder {
     position: relative;
@@ -20,19 +87,6 @@ body {
     padding: 50px;
     
     margin: 50px 0px 30px 0px;
-    background: rgba(0, 0, 0, 0.575);
-    box-shadow: 0 5px 15px rgba(78, 133, 216, 0.5);
-    border-radius: 25px;
-}
-
-.boxborder-table {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    padding: 20px;
-    
-    margin: 0px 0px 60px 0px;
     background: rgba(0, 0, 0, 0.575);
     box-shadow: 0 5px 15px rgba(78, 133, 216, 0.5);
     border-radius: 25px;
@@ -56,6 +110,20 @@ body {
     text-justify: inter-word;
 }
 
+.boxborder-table {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    padding: 20px;
+    
+    margin: 0px 0px 60px 0px;
+    background: rgba(0, 0, 0, 0.575);
+    box-shadow: 0 5px 15px rgba(78, 133, 216, 0.5);
+    border-radius: 25px;
+}
+
+
 #customers {
     font-family: sans-serif;
     border-collapse: collapse;
@@ -64,50 +132,25 @@ body {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0 20px rgb(0, 0, 0);
-  }
+}
   
-  #customers td, #customers th {
+#customers td, #customers th {
     border: 3px solid rgb(184, 170, 170);
     padding: 8px;
     font-size: 3vw;
-  }
+}
   
-  #customers tr:nth-child(even){background-color: #f2f2f2;}
-  #customers tr:nth-child(odd){background-color: #d3d8d8;}
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+#customers tr:nth-child(odd){background-color: #d3d8d8;}
   
-  #customers tr:hover {background-color: rgb(189, 181, 108);}
+#customers tr:hover {background-color: rgb(189, 181, 108);}
   
-  #customers th {
+#customers th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: rgb(189, 181, 108);
     color: rgb(0, 0, 0);
-  }
-
-.embed-responsive{
-    width: 51%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 25px;
-    box-shadow: 0 5px 15px rgba(78, 133, 216, 0.5);
-    margin-top: 5rem;
-
-}
-    
-.nav-link{
-    font-family: sans-serif;
-    text-transform: uppercase;
-    margin-right: 55px;
-    font-size: clamp(1rem, 1.15vw, 5rem);
-}
-    
-.navbar-brand {
-    font-size: clamp(1rem, 2.4vw, 5rem);
-}
-
-#hozzaad {
-    padding: 0px;;
 }
 
 .editor {
@@ -129,55 +172,181 @@ body {
     font-size: clamp(1rem, 1.5vw, 5rem);
 }
 
+@media (min-width: 768px){  /*monitor beállítások*/
 
+    body {
+        background: url(/media/shutterstock_326638589.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 
-#logo{
-    color: black;
-    transition: 0.3s;
-}
-#logo:hover{
-    color: rgb(156, 156, 156);
-    transition: 0.3s;
-}
+    .dropdown:hover .dropdown-menu{
+        display:block;
+        transition: 0.4s;
+    }
 
-#navbarDropdown{
-    color: black;
-    transition: 0.3s;
-}
-#navbarDropdown:hover{
-    color: rgb(156, 156, 156);
-}
-.nav-link{
-    padding: 0px;
+    .navbar{
+        padding: 0px 0px 0px 25px;
+    }
+    
+    #navbarDropdown{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3vw;
+        margin-right: 35px;
+        color:rgb(0, 0, 0);
+        transition: 0.3s;
+    }
+    
+    .nav-item{
+        list-style: none;
+    }
+    
+    .dropdown-toggle::after {
+        display:none;
+    }
+    
+    #navbarDropdown:hover{
+        color:rgb(131, 131, 131);
+    }
+        
+    #logoKep{
+        width: 7%;
 
-}
+    }
+    
+    #logo{
+        color: rgb(0, 0, 0);
+        transition: 0.3s;
+        font-size: 2.8vw;
+        padding: 10px 0px 10px 0px;
+    }
+    #logo:hover{
+        color: rgb(156, 156, 156);
+        transition: 0.3s;
+    }
+    
+    .nav-link{
+        padding: 0px;
+    
+    }
+    
+    .dropdown-menu{
+        background-color: rgba(0, 0, 0, 0.76); 
+        border-radius: 25px;
+        transition: 0.4s;
+    }
+    
+    .dropdown-item{
+        color: white;
+        font-size: 1.1vw;
+        transition: 0.5s;
+        background-color: rgba(128, 128, 128, 0);
+        text-align: center;
+    }
 
-
-@media only screen and (min-width: 768px){
-.dropdown:hover .dropdown-menu{
-    display:block;
-    transition: 0.4s;
+    .dropdown-item:hover{
+        color: black;
+        font-size: 1.3vw;
+        transition: 0.4s;
+        background-color: rgba(189, 181, 108);
+        border-radius: 25px;
+    }
+    
+    .embed-responsive{
+        width: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 25px;
+        margin-top: 10rem;
+    
+    }
+    
+    .boxborder {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65%;
+        padding: 50px;
+        margin: 50px 0px 30px 0px;
+        background: rgba(0, 0, 0, 0.575);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+    }
+    
+    .boxborder h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 2.7vw;
+        color: rgb(189, 181, 108);
+        text-align: center;
+    }
+    
+    .boxborder h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 1.3vw;
+        line-height: 175%;
+        color: #ffffff;
+        text-align: left;
+        text-justify: inter-word;
+    }
+    
+    .boxborder-table {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        padding: 20px;
+        
+        margin: 0px 0px 60px 0px;
+        background: rgba(0, 0, 0, 0.575);
+        box-shadow: 0 5px 15px rgba(78, 133, 216, 0.5);
+        border-radius: 25px;
+    }
+    
+    #customers {
+        font-family: sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+    }
+      
+    #customers td, #customers th {
+        border: 1px solid rgb(184, 170, 170);
+        padding: 2px 8px;
+        font-size: 1.1vw;
+    }
+      
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    #customers tr:nth-child(odd){background-color: #d3d8d8;}  
+    #customers tr:hover {background-color: rgb(189, 181, 108);}
+      
+    #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: rgb(189, 181, 108);
+        color: rgb(0, 0, 0);
+    }
+    
+    .editor {
+        background: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        border-radius: 25px;
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 2vh;
+        margin-left: 2vh;
+    }
+    
+    .editor p {
+        color: white;
+        padding: 0px 10px 0px 10px;
+        border: 0px;
+        margin: 0px;
+        font-size: 1.1vw;
+    }
 }
-}
-
-.dropdown-menu{
-    background-color: rgba(0, 0, 0, 0.671); 
-    border-radius: 25px;
-    transition: 0.4s;
-}
-
-.dropdown-item{
-    color: white;
-    font-size: clamp(1rem, 1.2vw, 5rem);
-    transition: 0.5s;
-    background-color: rgba(128, 128, 128, 0);
-    text-align: center;
-}
-.dropdown-item:hover{
-    color: black;
-    font-size: clamp(1rem, 1.2vw, 5rem);
-    transition: 0.4s;
-    background-color: rgba(189, 181, 108);
-    border-radius: 25px;
-}
-  
