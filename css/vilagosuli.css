@@ -29,7 +29,7 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%;
+    width: 80%;
     padding: 20px;
     
     margin: 0px 0px 60px 0px;
@@ -59,7 +59,7 @@ body {
 #customers {
     font-family: sans-serif;
     border-collapse: collapse;
-    font-size: 0.9em;
+    font-size: 4vw;
     width: 100%;
     border-radius: 15px;
     overflow: hidden;
@@ -69,7 +69,7 @@ body {
   #customers td, #customers th {
     border: 3px solid rgb(184, 170, 170);
     padding: 8px;
-    font-size: 2vw;
+    font-size: 3vw;
   }
   
   #customers tr:nth-child(even){background-color: #f2f2f2;}
