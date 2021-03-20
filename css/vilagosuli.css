@@ -7,9 +7,29 @@
         background-attachment: fixed;
     }
 
+    .info{
+        position: relative;
+        padding: 60px 0px 0px 75px;
+        font-size: 1.3vw;
+        display: none;
+    }
+
+    .mystyle1 #suli{
+        float: left;
+        font-size: 18px;
+        padding: 0px;
+        display: none;
+    }
+
+    .mystyle2 #suli{
+        font-size: 18px;
+        float: left;
+        display: none;
+    }
+
     /* width */
     ::-webkit-scrollbar {
-        width: 20px;
+        width: 10px;
 
       }
       
@@ -22,8 +42,8 @@
       
       /* Handle */
       ::-webkit-scrollbar-thumb {
-        background: linear-gradient(rgb(255, 255, 255),rgba(189, 181, 108));
-        border-radius: 15px;
+        background: linear-gradient(rgb(230, 207, 161),rgb(255, 255, 255));
+
       }
 
     .mystyle1 {
@@ -38,7 +58,7 @@
       
     .mystyle1 .dropbtn {
         transition: 0.3s;
-        font-size: 2vw;
+        font-size: 1.5vw;
         padding: 20px 32px 0 0;
         border: none;
         background-color: inherit;
@@ -49,9 +69,8 @@
     .mystyle2 .dropbtn {
         background-color: rgba(0, 0, 0, 0);
         transition: 0.3s;
-        font-size: 2vw;
-        padding-top: 7px;
-        padding: 7px 32px 0 0;
+        font-size: 1.5vw;
+        padding: 15px 32px 0 0;
         color: rgb(0, 0, 0);
         border: none;
         outline: none;
@@ -60,27 +79,28 @@
 
     .mystyle1 #logoKep{
         width: 3.5vw;
-        transition: 1.3;
+        transition: 0.3s;
     }      
 
     .mystyle2 #logoKep{
-        width: 4vw;
-        padding: 0px 0px 0px 15px;
+        width: 2.3vw;
+
         float: left;
-        transition: 0.2s;
+        transition: 0.3s;
     }
 
     .mystyle1 #vilagosuli{
         margin: 0 0 0 0;
-        padding: 7px 0px 0px 15px;
-        font-size: 1.7vw;
+        padding: 20px 0px 0px 0px;
+        font-size: 1.8vw;
         text-align: left;
+        
     }
     
     .mystyle2 #vilagosuli{
         margin: 0 0 0 0;
-        padding: 5px 0px 10px 15px;
-        font-size: 1.2vw;
+        padding: 9px 0px 10px 0px;
+        font-size: 1.7vw;
         text-align: left;
     }
 
@@ -117,8 +137,8 @@
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #000000d7;
-        color: #ffffffd7;
+        background-color: rgba(121, 121, 121, 0.925);
+        color: rgb(255, 255, 255);
         border-radius: 25px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 3;
@@ -136,8 +156,8 @@
     }
     
     .dropdown-content a:hover {
-        background-color: rgba(189, 181, 108);
-        border-radius: 25px;
+        background-color: rgb(230, 207, 161);
+        border-radius: 24px;
         color: rgb(255, 255, 255);
     }
     
@@ -150,11 +170,12 @@
     }
     
     .embed-responsive{
-        width: 55%;
+        width: 45%;
         left: 50%;
         transform: translateX(-50%);
         border-radius: 25px;
-        margin-top: 110px;
+        margin-top: 140px;
+        margin-bottom: 90px;
     
     }
     
@@ -219,13 +240,13 @@
       
     #customers tr:nth-child(even){background-color: #f2f2f2;}
     #customers tr:nth-child(odd){background-color: #d3d8d8;}  
-    #customers tr:hover {background-color: rgb(189, 181, 108);}
+    #customers tr:hover {background-color: rgb(230, 207, 161);}
       
     #customers th {
         padding-top: 12px;
         padding-bottom: 12px;
         text-align: left;
-        background-color: rgb(189, 181, 108);
+        background-color: rgb(230, 207, 161);
         color: rgb(0, 0, 0);
     }
     
