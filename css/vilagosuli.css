@@ -6,18 +6,82 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-    
-    
 
-    
+    /* width */
+    ::-webkit-scrollbar {
+        width: 20px;
 
-    #logoKep{
-        width: 3.5vw;
-        transition: 1.3;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 0px;
+        background: rgba(0, 0, 0, 0.829);
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(rgb(255, 255, 255),rgba(189, 181, 108));
+        border-radius: 15px;
+      }
+
+    .mystyle1 {
+        transition: 0.3s;
     }
     
-    #vilagosuli{
-        padding-top: 12px;
+    .mystyle2 {
+        background-color: rgb(230, 207, 161);
+        transition: 0.3s;
+        border-radius: 0px 0px 25px 25px;
+    }
+      
+    .mystyle1 .dropbtn {
+        transition: 0.3s;
+        font-size: 2vw;
+        padding: 20px 32px 0 0;
+        border: none;
+        background-color: inherit;
+        font-family: inherit;
+
+    }
+
+    .mystyle2 .dropbtn {
+        background-color: rgba(0, 0, 0, 0);
+        transition: 0.3s;
+        font-size: 2vw;
+        padding-top: 7px;
+        padding: 7px 32px 0 0;
+        color: rgb(0, 0, 0);
+        border: none;
+        outline: none;
+        font-family: inherit;
+    }
+
+    .mystyle1 #logoKep{
+        width: 3.5vw;
+        transition: 1.3;
+    }      
+
+    .mystyle2 #logoKep{
+        width: 4vw;
+        padding: 0px 0px 0px 15px;
+        float: left;
+        transition: 0.2s;
+    }
+
+    .mystyle1 #vilagosuli{
+        margin: 0 0 0 0;
+        padding: 7px 0px 0px 15px;
+        font-size: 1.7vw;
+        text-align: left;
+    }
+    
+    .mystyle2 #vilagosuli{
+        margin: 0 0 0 0;
+        padding: 5px 0px 10px 15px;
+        font-size: 1.2vw;
+        text-align: left;
     }
 
     .vmi{
@@ -45,17 +109,6 @@
     }
     .topnav a:hover {
         color:rgb(131, 131, 131);
-    }
-    .dropdown .dropbtn {
-        border: none;
-        outline: none;
-        color: rgb(0, 0, 0);
-        padding: 0 32px 0 0;
-        background-color: inherit;
-        font-size: 2vw;
-        font-family: inherit;
-        margin-top: 5px;
-        z-index: 2;
     }
     .dropdown .dropbtn:hover{
         color:rgb(131, 131, 131);
@@ -101,7 +154,7 @@
         left: 50%;
         transform: translateX(-50%);
         border-radius: 25px;
-        margin-top: 10rem;
+        margin-top: 110px;
     
     }
     
@@ -112,16 +165,17 @@
         width: 65%;
         padding: 50px;
         margin: 50px 0px 30px 0px;
-        background: rgba(0, 0, 0, 0.575);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        background: rgba(255, 255, 255, 0.822);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
         border-radius: 25px;
     }
     
     .boxborder h2 {
-        margin: 0;
         padding: 0;
+        margin: 0;
+        border: 0;
         font-size: 2.7vw;
-        color: rgb(189, 181, 108);
+        color: rgb(0, 0, 0);
         text-align: center;
     }
     
@@ -130,7 +184,7 @@
         padding: 0;
         font-size: 1.3vw;
         line-height: 175%;
-        color: #ffffff;
+        color: #000000;
         text-align: left;
         text-justify: inter-word;
     }
@@ -578,54 +632,4 @@
         margin: 0px;
         font-size: 1.1vw;
     }
-}
-
-.mystyle1 .dropbtn {
-    background-color: rgba(0, 0, 0, 0);
-    transition: 0.3s;
-    font-size: 1.7vw;
-    padding-top: 7px;
-    color: white;
-  }
-.mystyle2 .dropbtn {
-    background-color: rgba(0, 0, 0, 0);
-    transition: 0.3s;
-    font-size: 2vw;
-    padding-top: 5px;
-  }
-.mystyle1 {
-    background-color: rgba(0, 0, 0, 0.699);
-    transition: 0.3s;
-    border-radius: 0px 0px 25px 25px;
-  }
-.mystyle2 {
-    background-color: rgba(0, 0, 0, 0);
-    transition: 0.3s;
-  }
-
-.mystyle1 #logoKep{
-    width: 0%;
-    float: left;
-
-    transition: 0.3s;
-
-}
-
-
-.mystyle1 .active {
-    display: none;
-  }
-.mystyle2 .active {
-    padding: 10px 0 0 10px;
-  }
-
-.mystyle1 #vilagosuli{
-    margin: 0 0 0 0;
-    padding: 0px 0px 10px 25px;
-    font-size: 2.5vw;
-}
-.mystyle2 #vilagosuli{
-    margin: 0 0 0 0;
-    padding: 7px 0px 10px 15px;
-    font-size: 3vw;
 }

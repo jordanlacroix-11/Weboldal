@@ -76,12 +76,12 @@ function fv1() {
 
     window.onscroll = function(){
         if (window.pageYOffset >50) {
-            nav.classList.remove("mystyle2");
-            nav.classList.add("mystyle1"); 
+            nav.classList.remove("mystyle1");
+            nav.classList.add("mystyle2"); 
         }
         else{
-            nav.classList.remove("mystyle1");
-            nav.classList.add("mystyle2");
+            nav.classList.remove("mystyle2");
+            nav.classList.add("mystyle1");
         }
     }
 }
