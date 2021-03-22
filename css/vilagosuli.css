@@ -13,6 +13,156 @@
         font-size: 1.3vw;
         display: none;
     }
+    #myBtn {
+        /*display: none; */ /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: rgb(230, 207, 161); /* Set a background color */
+        color: rgb(0, 0, 0); /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+        transition: 0.3s;
+     }
+      
+    #myBtn:hover {
+        background-color: rgba(255, 255, 255, 0.795); /* Add a dark-grey background on hover */
+    }
+
+
+
+    .uj{
+        position: sticky;
+        left: 25px;
+        top: 400px;
+        height: 40px;
+        width: 40px;
+        background-color: rgb(230, 207, 161);
+        border-radius: 100px;
+        transition: 0.3s;
+        text-align: center;     
+    }
+
+    .uj a{
+        position: absolute;
+        color: black;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-decoration: none;
+        font-size: 1vw;
+    }
+    .uj a:hover{
+        color: gray;
+    }
+
+    .uj:hover{
+        width: 15%;
+        background-color:  rgba(255, 255, 255, 0.795);
+        vertical-align: default;
+        text-align: center;
+    }
+    .uj:hover .kettes{
+        display: initial;
+    }
+    .uj:hover .egyes{
+        display: none;
+    }
+
+    .kettes{
+        display: none;
+    }
+
+    .uj2{
+        position: sticky;
+        left: 25px;
+        top: 450px;
+    }
+    .uj3{
+        position: sticky;
+        left: 25px;
+        top: 500px;
+    }
+
+
+   
+
+
+    /*
+    .social {
+        position: sticky;
+        left: 25px;
+        top: 400px;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        background-color: rgb(230, 207, 161);
+        text-align: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+
+    .social:hover a{
+        display:unset;
+    }
+
+    .social2{
+        position: sticky;
+        left: 25px;
+        top: 460px;
+    }
+    .social3{
+        position: sticky;
+        left: 25px;
+        top: 520px;
+    }
+
+    .social p {
+        color: rgb(71, 0, 0);
+        padding-top: 12px;
+        border: 0px;
+        margin: 0px;
+        border-radius: 25px;
+        width: 50px;
+        height: 50px;
+        transition: 0.3s;
+        display: block;
+    }
+    
+    .social:hover{
+        background-color: rgba(255, 255, 255, 0.795);
+        width: 150px;
+    }
+
+    .social p:hover {
+
+        width: 150px;
+        height: 50px;
+        padding: 0px 10px 0px 10px;
+        border: 0px;
+        margin: 0px;
+        font-size: 1.1vw;
+        border-radius: 25px;
+    }
+
+    .social a{
+        font-size: 0.7vw;
+        color: black;
+        text-decoration: none;
+        display: none;
+    }
+
+    .social a:hover{
+        font-size: 0.7vw;
+        color:rgb(166, 166, 167);
+        text-decoration: none;
+    }
+    */
 
     .mystyle1 #suli{
         float: left;
@@ -54,6 +204,7 @@
         background-color: rgb(230, 207, 161);
         transition: 0.3s;
         border-radius: 0px 0px 25px 25px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     }
       
     .mystyle1 .dropbtn {
@@ -137,7 +288,7 @@
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: rgba(121, 121, 121, 0.925);
+        background-color: rgba(255, 255, 255, 0.658);
         color: rgb(255, 255, 255);
         border-radius: 25px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -146,7 +297,7 @@
     
     .dropdown-content a {
         float: none;
-        color: white;
+        color: rgb(0, 0, 0);
         font-size: 1.5vw;
         padding: 12px 16px;
         text-decoration: none;
@@ -267,7 +418,6 @@
         margin: 0px;
         font-size: 1.1vw;
     }
-
 
 }
 @media (max-width: 999px){  /*félmonitor beállítások*/

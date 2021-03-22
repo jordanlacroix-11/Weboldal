@@ -1,50 +1,3 @@
-function fv1() {
-    var nav = document.getElementById('nav');
-    var dropbtn = document.getElementsByClassName('dropbtn');
-    var logoKep = document.getElementById('logoKep');
-    var mozgo1 = document.getElementById('mozgo1');
-    var mozgo2 = document.getElementById('mozgo2');
-    var mozgo3 = document.getElementById('mozgo3');
-    var mozgo4 = document.getElementById('mozgo4');
-
-
-    window.onscroll = function(){
-        if (window.pageYOffset >100) {
-            nav.style.background = "rgba(189, 181, 108, 1";           
-            nav.style.boxShadow = "0px 2px 2px rgba(0, 0, 0, 0.65";
-            mozgo1.style.fontSize = "1.5vw";
-            mozgo1.style.transition = "0.3s";
-            mozgo2.style.fontSize = "1.5vw";
-            mozgo2.style.transition = "0.3s";
-            mozgo3.style.fontSize = "1.5vw";
-            mozgo3.style.transition = "0.3s";
-            mozgo4.style.fontSize = "1.5vw";
-            mozgo4.style.transition = "0.3s";
-            nav.style.transition = "0.3s";
-            nav.style.paddingBottom = "16px";
-            logoKep.style.display = "none";
-            logoKep.style.transition = "0.3s";
-
-        }
-        else{
-            nav.style.background = "rgba(189, 181, 108, 0)";
-            nav.style.boxShadow = "none";
-            nav.style.transition = "0.3s";
-            mozgo1.style.fontSize = "2vw";
-            mozgo1.style.transition = "0.3s";
-            mozgo2.style.fontSize = "2vw";
-            mozgo2.style.transition = "0.3s";
-            mozgo3.style.fontSize = "2vw";
-            mozgo3.style.transition = "0.3s";
-            mozgo4.style.fontSize = "2vw";
-            mozgo4.style.transition = "0.3s";
-            logoKep.style.display = "block";
-            logoKep.style.transition = "0.3s";
-        }
-    }
-    window.onload
-}
-
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -55,33 +8,38 @@ function myFunction() {
   }
 
 
+//Get the button:
+mybutton = document.getElementById("myBtn");
 
-  function fv2() {
-    document.getElementsByClassName('dropdown');
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-    window.onscroll = function(){
-        if (window.pageYOffset >100) {
-            document.getElementsByClassName("dropdown").className = "mystyle";        
-        }
-        else{
-            document.getElementsByClassName("dropdown").className = "mystyle2"; 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 
-        }
-    }
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 
 function fv1() {
-    let nav = document.getElementById("nav")
+  let nav = document.getElementById("nav")
 
-    window.onscroll = function(){
-        if (window.pageYOffset >50) {
-            nav.classList.remove("mystyle1");
-            nav.classList.add("mystyle2"); 
-        }
-        else{
-            nav.classList.remove("mystyle2");
-            nav.classList.add("mystyle1");
-        }
-    }
+  window.onscroll = function(){
+      if (window.pageYOffset >50) {
+          nav.classList.remove("mystyle1");
+          nav.classList.add("mystyle2"); 
+      }
+      else{
+          nav.classList.remove("mystyle2");
+          nav.classList.add("mystyle1");
+      }
+  }
 }
