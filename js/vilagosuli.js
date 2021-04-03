@@ -10,6 +10,7 @@ function myFunction() {
 
 //Get the button:
 mybutton = document.getElementById("myBtn");
+let nav = document.getElementById("nav")
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -17,8 +18,12 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
+    nav.classList.remove("mystyle1");
+    nav.classList.add("mystyle2"); 
   } else {
     mybutton.style.display = "none";
+    nav.classList.remove("mystyle2");
+    nav.classList.add("mystyle1");
   }
 }
 
@@ -26,20 +31,4 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-
-function fv1() {
-  let nav = document.getElementById("nav")
-
-  window.onscroll = function(){
-      if (window.pageYOffset >50) {
-          nav.classList.remove("mystyle1");
-          nav.classList.add("mystyle2"); 
-      }
-      else{
-          nav.classList.remove("mystyle2");
-          nav.classList.add("mystyle1");
-      }
-  }
 }
