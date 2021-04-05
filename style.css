@@ -1,23 +1,39 @@
-#elso{  
-    color: rgb(238, 22, 22);
-    border: 5px solid black;
-    display: inline;
-    position: absolute;
-    top: 450px;
-    left: 100px;
-
-}
-#masodik{  
-    color: rgb(238, 22, 22);
-    border: 5px solid black;
-    position: absolute;
-    visibility: hidden;
-    top: 550px;
-    left: 100px;
-    transition: 1.3s;
+.social{
+    position: relative;
+    top: 400px;
+    left: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 6vh;
+    width: 3vw;
+    background-color: rgb(223, 199, 120);
+    color: black;
+    text-decoration: none;
+    border-radius: 100px;
+    margin: 1vh;
+    transition: 0.3s;
 }
 
-#elso:hover + #masodik{
-    visibility: initial;
-    transition: 1.3s;
+h3{
+    color: black;
+    font-size: 1vw;
+}
+
+.social:hover{
+    width: 150px;
+    transition: 0.3s;
+}
+
+#asd{
+    display: none;
+    transition: 0.3s;
+}
+
+.social:hover #asd{
+    display:block;
+    transition: 0.3s;
+}
+.social:hover #eltunik{
+    transition: 0.3s;
 }
