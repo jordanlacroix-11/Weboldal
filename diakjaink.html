@@ -1,99 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/vilagosuli.css">
-    <title>Diákjaink</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav">
-		<a class="navbar-brand" href="vilagosuli.html">vilagosuli.hu</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+<html lang="hu">
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Iskolánkról
-					</a>
-					<div class="legordulo">
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="bemutatkozas.html">Bemutatkozás</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="dolgozoink.html">Dolgozóink</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="diakjaink.html">Diákjaink</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="alapdokumentumok.html">Alapdokumentumok</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="palyazatok.html">Pályázatok</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="kapcsolat.html">Kapcsolat</a>
-						</div>
-					</div>
-				</li>
-				<li class="nav-item active dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Szülőknek
-					</a>
-					<div class="legordulo">
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Beiratkozás</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Hit - és erkölcstan</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="Else.html">Taneszközlisták</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="Else.html">Könyvtár</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="Else.html">E - KRÉTA</a>
-						</div>
-					</div>
-				</li>
-				<li class="nav-item active dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Tanulóknak
-					</a>
-					<div class="legordulo">
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Diákmunkák</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">DÖK</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="Else.html">E-KRÉTA</a>
-						</div>
-					</div>
-				</li>
-				<li class="nav-item active dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Archívum
-					</a>
-					<div class="legordulo">
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Fotók</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Videók</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="Else.html">Emlékezések</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="Else.html">Sajtómegjelenés</a>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<br><br>
+<head>
+    <title>Világosuli</title>
+    <link rel="shortcut icon" type="image" href="media/Logo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/vilagosuli.css">
+
+
+
+</head>
+
+<body onload="fv1()">
+    <nav class="vmi mystyle1" id="nav">
+        <div class="topnav" id="myTopnav">
+            <a href="vilagosuli.html" class="active"><img id="logoKep" src="media/Logo.png" alt=""></a>
+            <a href="vilagosuli.html" id="vilagosuli" class="dropbtn">Balatonvilágosi Mészöly Géza Általános Iskola <br>
+                <div id="suli">vilagosuli.hu</div>
+            </a>
+            <div class="dropdown">
+                <button id="mozgo" class="dropbtn">Archívum
+                </button>
+                <div id="igazit" class="dropdown-content">
+                    <a href="fotok.html">Fotók</a>
+                    <a href="videok.html">Videók</a>
+                    <a href="tablok.html">Tablók</a>
+                    <a href="emlekezesek.html">Emlékeztetők</a>
+                    <a href="sajtomegjelenes.html">Sajtómegjelenés</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button id="mozgo1" class="dropbtn">Tanulóknak
+                </button>
+                <div class="dropdown-content">
+                    <a href="diakmunkak.html">Diákmunkák</a>
+                    <a href="dok.html">DÖK</a>
+                    <a href="#">E-KRÉTA</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button id="mozgo2" class="dropbtn">Szülőknek
+                </button>
+                <div class="dropdown-content">
+                    <a href="beiratkozas.html">Beiratkozás</a>
+                    <a href="hit.html">Hit-és erkölcstan</a>
+                    <a href="taneszkozlista.html">Taneszközlista</a>
+                    <a href="konyvtar.html">Könyvtár</a>
+                    <a href="#">E-KRÉTA</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button id="mozgo3" class="dropbtn">Iskolánkról
+                </button>
+                <div class="dropdown-content">
+                    <a href="bemutatkozas.html">Bemutatkozás</a>
+                    <a href="dolgozoink.html">Dolgozóink</a>
+                    <a href="diakjaink.html">Diákjaink</a>
+                    <a href="alapdokumentumok.html">Alapdokumentumok</a>
+                    <a href="palyazatok.html">Pályázatok</a>
+                    <a href="kapcsolat.html">Kapcsolat</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </nav>
+
+
+
+    <div class="info">vilagosuli.hu</div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i id="toTop" class="fas fa-chevron-up"></i></button>
+
+    <div class="uj uj1"><a class="egyes"><i class="fab fa-facebook-f"></i></a><a
+            href="https://www.facebook.com/meszolygeza.altalanosiskola.9"
+            class="kettes">meszolygeza.altalanosiskola.9</a></div>
+    <div class="uj uj2"><a class="egyes"><i class="far fa-envelope"></i></a><a class="kettes">meszisk@gmail.com</a>
+    </div>
+    <div class="uj uj3"><a class="egyes"><i class="fas fa-phone"></i></a><a class="kettes">06 30/428 1005</a></div>
+
+    <div class="boxborder">
+        <h2>Hírfolyam <br><br></h2>
+        <h3>
+            <ul>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ipsa ut esse voluptatibus
+                reprehenderit magnam omnis cupiditate iusto molestias sed expedita facilis dolores aliquam inventore
+                incidunt, iste perspiciatis sapiente eligendi?
+            </ul>
+        </h3>
+    </div>
+
+    <div class="boxborder-table">
+		<table id="customers">
+			<tr>
+				<th>Név</th>
+				<th>Munkakör</th>
+			</tr>
+			<tr>
+				<td>Farkas Lászlóné</td>
+				<td>iskolatitkár</td>
+			</tr>
+			<tr>
+				<td>Gránitzné Orbán Mária</td>
+				<td>takarító</td>
+			</tr>
+			<tr>
+				<td>Németh Ádám</td>
+				<td>rendszergazda</td>
+			</tr>
+			<tr>
+				<td>Tóthné Ágota Ibolya</td>
+				<td>takarító</td>
+			</tr>
+		</table>
+	</div>
+
+        <div class="editor">
+            <p class="edit">Edited by: Roland Rajkó</p>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/3dcb1d327d.js" crossorigin="anonymous"></script>
+        <script src="/js/vilagosuli.js"></script>
+
 </body>
+
 </html>
