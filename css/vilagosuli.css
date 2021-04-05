@@ -173,7 +173,6 @@
         text-decoration: none;
         display: none;
         transition: 1s;
-        pointer-events: none;
     }
 
     .social a:hover{
@@ -181,7 +180,6 @@
         color:rgb(166, 166, 167);
         text-decoration: none;
         transition: 1s;
-        pointer-events: none;
     }
 
     /* width */
