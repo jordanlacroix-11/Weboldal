@@ -51,7 +51,7 @@
 
     .social:hover{
         background-color: rgba(255, 255, 255, 0.795);
-        width: 11%;
+        width: 9.5%;
     }
 
     .social a{
@@ -254,6 +254,10 @@
         box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
         border-radius: 25px;
     }
+
+    .fejlec{
+        padding: 15px;
+    }
     
     .boxborder h2 {
         font-size: 2.2vw;
@@ -265,6 +269,16 @@
         line-height: 175%;
         text-align: left;
         text-justify: inter-word;
+    }
+
+    .boxborder-table img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
     
     .boxborder-table {
@@ -310,12 +324,23 @@
         border-radius: 25px;
         width: fit-content;
         margin: 10vh 0vh 2vh 2vh;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    .alul{
+        position: absolute;
+        bottom: 2vh;
+        left: 2vh;
     }
 
     .editor p {
         color: white;
         padding: 0px 10px 0px 10px;
         font-size: 1.1vw;
+        margin: 0px;
     }
 }
 @media (min-width: 551px) and (max-width: 999px){  /*félmonitor beállítások*/
