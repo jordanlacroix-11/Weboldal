@@ -1256,7 +1256,8 @@
 @media (max-width: 550px){  /*telefon beállítások*/
     body {
         background: url(/media/hatter/pexels-max-fischer-5212341.jpg);
-        background-size: cover;
+        background-size:cover;
+        width: auto;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
