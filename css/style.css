@@ -1,0 +1,109 @@
+body{
+    background-color: green;
+}
+
+.vmi{
+    position: relative;
+    top: 400px;
+    left: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 6vh;
+    width: 3vw;
+    background-color: rgb(230, 207, 161);
+    color: black;
+    text-decoration: none;
+    border-radius: 100px;
+    margin: 1vh;
+    transition: 0.3s;
+}
+
+i{
+    width: 100px;
+}
+
+h3{
+    color: black;
+    font-size: 1vw;
+}
+
+.vmi:hover{
+    width: 15%;
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.795);
+}
+
+#asd{
+    display: none;
+    transition: 0.3s;
+}
+
+.vmi:hover #asd{
+    display:block;
+    transition: 0.3s;
+}
+.vmi:hover #eltunik{
+    transition: 0.3s;
+}
+
+
+.social {
+    position: sticky;
+    left: 25px;
+    top: 400px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: rgb(230, 207, 161);
+    color: black;
+    text-align: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.social2{
+    top: 450px;
+}
+
+.social3{
+    top: 500px;
+}
+
+.social:hover{
+    background-color: rgba(255, 255, 255, 0.795);
+    width: 9.5%;
+}
+
+.social a{
+    font-size: 0.9vw;
+    color: black;
+    pointer-events: none;
+    display: none;
+}
+
+.social:hover a{
+    display:block;
+}
+
+.social:hover p{
+    width: 150px;
+    padding: 0px 10px 0px 10px;
+    font-size: 0.8vw;
+    transition: 0.3s;
+}
+
+.social p {
+    padding-top: 8px;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.social1:hover{
+    width: 14%;
+}
+
+.social1:hover p{
+    width: 200px;
+}

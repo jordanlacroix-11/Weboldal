@@ -1,0 +1,113 @@
+body{
+    background-color: grey;
+}
+
+.alap{
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    border-radius: 1000px;
+    position: absolute;
+    top: 50%;
+}
+
+.alap i{
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.alap2{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 1000px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    margin: auto;
+    position: relative;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    font-size: 0px;
+}
+
+.alap:hover + .alap2{
+    width: 400px;
+    transition: 0.3s;
+}
+.alap:hover + .alap2 p{
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.alap2:hover{
+    width: 400px;
+    background-color: rgb(202, 202, 202);
+}
+
+.alap2:hover p{
+    font-size: 24px;
+    pointer-events: none;
+}
+
+.nezegeto{
+    align-items: center;
+    width: 60%;
+    height: auto;
+    margin: 10px;
+    background: #1D212B;
+    border-radius: 25px;
+}
+
+.nezegeto .slide{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.nezegeto .slide.active{
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+.nezegeto .slide img{
+  z-index: 1;
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+.nezegeto .navigation{
+  z-index: 4;
+  position: relative;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nezegeto .navigation .btn{
+  background: rgba(255, 255, 255, 0.5);
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nezegeto .navigation .btn.active{
+  background: #2696E9;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
