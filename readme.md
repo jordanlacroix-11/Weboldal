@@ -1,2 +1,2 @@
 Futtatható netlify-on:
-https://app.netlify.com/sites/zen-spence-847484/overview
+https://zen-spence-847484.netlify.app/
