@@ -1,2 +1,2 @@
 Futtatható netlify-on:
-https://zen-spence-847484.netlify.app/
+https://vilagosuli.netlify.app/
