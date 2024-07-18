@@ -8,16 +8,17 @@
     }
 
     .info{
-        width: 100px;
-        height: 3.5vh;
+        width: 140px;
+        height: 3vh;
         background: grey;
         color: white;
         position: fixed;
-        top: 35%;
-        left: 4%;
+        top: 36%;
+        left: 3.9%;
         font-size: 9px;
-        border-radius: 100px;
+        border-radius: 10px;
         text-align: center;
+        justify-content: center;
         display: flex;
         align-items: center;
         display: none;
@@ -25,11 +26,11 @@
     }
 
     .info2{
-        top: 47%;
+        top: 42%;
         height: 2vh;
     }
     .info3{
-        top: 57%;
+        top: 47%;
         height: 2vh;
     }
     .info4{
@@ -50,7 +51,7 @@
         background: rgba(255, 255, 255, 0.822);
         width: 30px;
         height: 30px;
-        border-radius: 1000px;
+        border-radius: 10px;
         position: fixed;
         top: 40%;
         left: 1%;
@@ -62,7 +63,7 @@
         background-color: white;
         width: 30px;
         height: 30px;
-        border-radius: 1000px;
+        border-radius: 10px;
         position: fixed;
         text-align: center;
         top: 40%;
@@ -308,7 +309,6 @@
         width: 40%;
         background: linear-gradient(rgba(65, 31, 216, 0.726),rgba(199, 48, 48, 0.699));
         color: white;
-        pointer-events: none;
     }
 
     .boxborder a{
@@ -1295,21 +1295,21 @@
     }
 
     .mystyle1 {
-        transition: 0.3s;
+        background: rgb(169, 203, 241);
+        border-radius: 0px 0px 25px 25px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     }
     
     .mystyle2 {
         background: rgb(169, 203, 241);
-        transition: 0.3s;
         border-radius: 0px 0px 25px 25px;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     }
 
     .mystyle1 .dropbtn {
-        color: white;
         transition: 0.3s;
-        font-size: 4.6vw;
-        padding: 5px 5px 5px 5px;
+        font-size: 4vw;
+        padding: 5px 15px 0 0;
         border: none;
         background-color: inherit;
         pointer-events: none;
@@ -1318,8 +1318,8 @@
     .mystyle2 .dropbtn {
         background-color: rgba(0, 0, 0, 0);
         transition: 0.3s;
-        font-size: 4.8vw;
-        padding: 10px 5px 0 0;
+        font-size: 4vw;
+        padding: 5px 15px 0 0;
         border: none;
         pointer-events: none;
     }
@@ -1366,15 +1366,18 @@
     }
     
     .topnav div{
-        float: right;
+        float:right;
     }
     
     .topnav a {
-        float: left;
         color: rgb(0, 0, 0);
         padding: 8px 10px;
         text-decoration: none;
         transition: 0.3s;
+    }
+
+    .dropbtn{
+        font-size: 20vh;
     }
 
     .dropdown .dropbtn:hover{
@@ -1408,18 +1411,12 @@
         float: none;
         color: rgb(0, 0, 0);
         font-size: 4vw;
-        padding: 4px 8px;
         text-decoration: none;
         display: block;
         text-align: center;
         transition: 0.3s;
     }
     
-    .dropdown-content a:hover {
-        background-color: rgb(230, 207, 161);
-        border-radius: 45px;
-        color: rgb(255, 255, 255);
-    }
     
     .dropdown:hover .dropdown-content {
         display: block;
